@@ -1,6 +1,6 @@
 /ip firewall address-list
 
-# bypass-vpn (direct): 426 ASNs, 15407 raw → 3355 aggregated
+# bypass-vpn (direct): 426 ASNs, 15421 raw → 3356 aggregated
 remove [find list=bypass-vpn comment~"^#auto"]
 add address=2.16.20.0/23 list=bypass-vpn comment="#auto rt [AS12389]"
 add address=2.16.53.0/24 list=bypass-vpn comment="#auto rt [AS12389]"
@@ -2272,6 +2272,7 @@ add address=170.33.136.0/22 list=bypass-vpn comment="#auto aliexpress [AS45102]"
 add address=170.33.144.0/24 list=bypass-vpn comment="#auto aliexpress [AS134963]"
 add address=170.33.152.0/24 list=bypass-vpn comment="#auto aliexpress [AS134963]"
 add address=170.33.160.0/24 list=bypass-vpn comment="#auto aliexpress [AS134963]"
+add address=170.33.216.0/22 list=bypass-vpn comment="#auto aliexpress [AS134963]"
 add address=170.168.18.0/23 list=bypass-vpn comment="#auto rt [AS12389]"
 add address=170.168.115.0/24 list=bypass-vpn comment="#auto misc [AS49505]"
 add address=171.22.72.0/22 list=bypass-vpn comment="#auto mts [AS44677]"
@@ -2628,7 +2629,7 @@ add address=185.247.16.0/23 list=bypass-vpn comment="#auto misc [AS9123]"
 add address=185.247.185.0/24 list=bypass-vpn comment="#auto misc [AS9123]"
 add address=185.251.240.0/22 list=bypass-vpn comment="#auto rt [AS204354]"
 add address=186.246.0.0/21 list=bypass-vpn comment="#auto misc [AS9123]"
-add address=186.246.8.0/24 list=bypass-vpn comment="#auto misc [AS9123]"
+add address=186.246.8.0/23 list=bypass-vpn comment="#auto misc [AS9123]"
 add address=188.16.0.0/14 list=bypass-vpn comment="#auto rt [AS12389]"
 add address=188.32.0.0/16 list=bypass-vpn comment="#auto rt [AS42610]"
 add address=188.65.240.0/21 list=bypass-vpn comment="#auto beeline [AS16345]"
